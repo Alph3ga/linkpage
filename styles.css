@@ -1,0 +1,27 @@
+.mainfont{
+    font-family: 'Ubuntu Condensed', Verdana, Geneva, sans-serif;
+}
+
+.calligraphy{
+    font-family: 'Dancing Script', cursive;
+}
+
+#profile_pic{
+    border-radius: 50%;
+    width: 30vw;
+}
+
+#name{
+    font-size: 2rem;
+}
+
+#heading{
+    width:100%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px){
+    #profile_pic{
+        width:15vw;
+    }
+}
