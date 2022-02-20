@@ -8,7 +8,7 @@
 
 #profile_pic{
     border-radius: 50%;
-    width: 30vw;
+    width: 50vw;
 }
 
 #name{
@@ -20,8 +20,8 @@
     text-align: center;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width:768px){
     #profile_pic{
-        width:15vw;
+        width:20vw;
     }
 }
