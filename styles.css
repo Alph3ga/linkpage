@@ -8,11 +8,20 @@
 
 #profile_pic{
     border-radius: 50%;
-    width: 50vw;
+    width: 40vw;
+    padding-top: 2.5vh;
 }
 
 #name{
-    font-size: 2rem;
+    font-size: 3.5rem;
+    padding: 0;
+    margin: 1vh;
+}
+
+#quote{
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
 }
 
 #heading{
@@ -20,7 +29,7 @@
     text-align: center;
 }
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width:900px){
     #profile_pic{
         width:20vw;
     }
