@@ -6,6 +6,10 @@
     font-family: 'Dancing Script', cursive;
 }
 
+body{
+    background-image: url(hollowed-boxes.svg);
+}
+
 #profile_pic{
     border-radius: 50%;
     width: 40vw;
@@ -16,12 +20,58 @@
     font-size: 3.5rem;
     padding: 0;
     margin: 1vh;
+    opacity: 100%;
+    z-index: 2;
+}
+
+a{
+    display: inline-block;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    color: black;
+}
+
+.link_icon{
+    display: block;
+    margin:auto;
+    float: left;
+    height: 100%;
 }
 
 #quote{
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding: 0;
     margin: 0;
+    opacity:100%;
+    z-index: 2;
+}
+
+#links{
+    text-align: center;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-items: flex-start;
+    padding:0;
+    padding-top: 3vw;
+}
+
+.link_name{
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 2vw;
+}
+
+.link{
+    height: 10vw;
+    margin:2vw;
+    padding:0.75vw;
+    border-style: solid;
+    border-color: black;
+    background-image: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.2));
+    backdrop-filter: blur(5px);
 }
 
 #heading{
@@ -29,7 +79,28 @@
     text-align: center;
 }
 
-@media only screen and (min-width:900px){
+#data{
+    position: relative;
+}
+
+#data::after{
+    content:"";
+    z-index: -1;
+    margin:0;
+    padding:0;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-image: url(Daco_37008.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 50%;
+}
+
+@media only screen and (min-width:1000px){
     #profile_pic{
         width:20vw;
     }
